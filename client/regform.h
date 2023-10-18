@@ -14,6 +14,7 @@ class regForm : public QWidget, public Singleton<regForm>
 
 public:
     friend Singleton<regForm>;
+    Ui::regForm *ui;
 
 private slots:
     void on_typeBox_currentIndexChanged(int index);
@@ -21,7 +22,6 @@ private slots:
     void on_regButton_clicked();
 
 private:
-    Ui::regForm *ui;
     explicit regForm(QWidget *parent = nullptr);
     ~regForm();
 };

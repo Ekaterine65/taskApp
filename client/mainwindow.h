@@ -14,6 +14,7 @@ class MainWindow : public QMainWindow, public Singleton <MainWindow>
 
 public:
     friend Singleton <MainWindow>;
+    Ui::MainWindow *ui;
 
 private slots:
     void on_openRegForm_clicked();
@@ -25,6 +26,5 @@ private slots:
 private:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H

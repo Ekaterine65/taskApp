@@ -16,6 +16,11 @@ public:
     friend Singleton<tasks>;
     Ui::tasks *ui;
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     explicit tasks(QWidget *parent = nullptr);
     ~tasks();

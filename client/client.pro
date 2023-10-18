@@ -12,26 +12,32 @@ CONFIG += c++17
 SOURCES += \
     client.cpp \
     list_of_edges.cpp \
+    list_of_edges_2.cpp \
     main.cpp \
     mainwindow.cpp \
     regform.cpp \
     singleclient.cpp \
-    tasks.cpp
+    tasks.cpp \
+    teachertable.cpp
 
 HEADERS += \
     client.h \
     list_of_edges.h \
+    list_of_edges_2.h \
     mainwindow.h \
     regform.h \
     singleclient.h \
     singleton.h \
-    tasks.h
+    tasks.h \
+    teachertable.h
 
 FORMS += \
     list_of_edges.ui \
+    list_of_edges_2.ui \
     mainwindow.ui \
     regform.ui \
-    tasks.ui
+    tasks.ui \
+    teachertable.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

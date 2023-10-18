@@ -28,7 +28,9 @@ public:
 
     void get_reg(QString key);
 
-    void get_auth(QString key);
+    void get_auth(QString key, QString type);
+
+    void fill_table(QString stats);
 
 private slots:
     void parser(QString serv_answer);

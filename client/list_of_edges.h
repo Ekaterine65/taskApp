@@ -15,7 +15,14 @@ class list_of_edges : public QWidget, public Singleton <list_of_edges>
 public:
     friend Singleton <list_of_edges>;
 
+    void generateRandomMatrix();
 
+    void updateMatrixDisplay();
+
+    void checkAnswer();
+
+private slots:
+    void on_sendAnswer_clicked();
 
 private:
     Ui::list_of_edges *ui;
